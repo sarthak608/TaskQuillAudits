@@ -2,7 +2,7 @@
 
 This repository contains five sub-repositories with the following purposes:
 
-- **contracts:** Contains a vulnerable smart contract with a reentrancy attack vulnerability.
+- **contracts:** Contains a upgradeable vulnerable smart contract with a reentrancy attack vulnerability with Pausing and Ownable.
 - **analyzer:** Contains code that identifies vulnerabilities in smart contracts using Slither and adds the report analysis to the database. It includes two APIs to retrieve detailed reports of open issues.
 - **front-running-service:** Contains code to monitor pending transactions of contracts in the mempool and detect patterns indicative of potential front-running attack. If a suspicious transaction is detected, it pauses the smart contract and adjusts dynamic gas fees accordingly.
 - **notification-service:** Contains code to monitor contracts for specific vulnerable patterns(reentrancy atatck) related to suspicious transactions and notify the recipient about such transactions.
