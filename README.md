@@ -9,6 +9,7 @@ This repository contains five sub-repositories with the following purposes:
 - **assets:** Contains all architecture diagrams related to the repositories.
 
 ## 1. analyzer
+![Analyzer's Architecture](/assets/analyzer.png)
 ### Installation and Dependency
 #### Install Solidity Compiler and Slither(https://github.com/crytic/slither) 
 ```
@@ -53,7 +54,6 @@ This will provide the overall report of open issues with issue Ids
 http://localhost:3000/issuedetails/:id
 This will provide the overall details specific to issue id
 
-![Analyzer's Architecture](/assets/analyzer.png)
 
 ## 2. Front Running Service 
 ![Front-Running-Service's Architecture](/assets/front-running-service.png)
