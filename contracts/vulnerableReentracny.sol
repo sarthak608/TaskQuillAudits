@@ -6,16 +6,18 @@ import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol";
 contract VulnerableReentracny is Initializable, UUPSUpgradeable, OwnableUpgradeable, PausableUpgradeable {
     mapping(address => uint256) public balances;
+    error NoEthSend();
+    error InsufficientBalance();
     function initialize() public initializer {
         __Ownable_init();
         __Pausable_init();
     }
     function deposit() external payable whenNotPaused {
-        require(msg.value > 0, "Must send ETH");
+        if(msg.value == 0) revert NoEthSend()
         balances[msg.sender] += msg.value;
     }
     function withdraw(uint256 _amount) external whenNotPaused {
-        require(_amount <= balances[msg.sender], "Insufficient balance");
+        if(_amount > balances[msg.sender]) revert InsufficientBalance();
         // Vulnerable to reentrancy attack : here
         (bool success, ) = msg.sender.call{value: _amount}("");
         require(success, "Transfer failed");
