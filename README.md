@@ -19,11 +19,11 @@ npm install -g solc
 pip3 install slither-analyzer
 ```
 check out the link for installation of slither and add solidity Compiler.
-### Go to Analyzer Folder
+#### Go to Analyzer Folder
 ```
 cd analyzer
 ```
-### Add The Smart Contract in contract folder inside analyzer
+#### Add The Smart Contract in contract folder inside analyzer
 ```
 analyzer/contract/file_name*.sol
 ```
@@ -69,11 +69,11 @@ This project focuses on monitoring pending transactions of smart contracts to de
 - **Attack Pattern Interface:** The project includes an Interface folder where you can define different attack patterns. This setup allows the service to check for various patterns and identify suspicious transactions accordingly.
 
 Overall, the goal is to improve the security of smart contracts by detecting and addressing potential front-running attacks before they can cause issues.
-### Go to Front Running Service Folder
+#### Go to Front Running Service Folder
 ```
 cd front-running-service
 ```
-### Installation
+#### Installation
 ```
 yarn install
 ```
@@ -102,11 +102,11 @@ This project focuses on monitoring pending transactions of smart contracts to de
 
 Overall, the goal is to improve the security of smart contracts by detecting and addressing potential reentrancy attacks before they can cause issues.
 
-### Go to Notification Service Folder
+#### Go to Notification Service Folder
 ```
 cd notification-service
 ```
-### Installation
+#### Installation
 ```
 yarn install
 ```
