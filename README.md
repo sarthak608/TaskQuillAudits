@@ -139,6 +139,6 @@ Based on the model’s analysis, determine the appropriate response:<br> <br>
 If the transaction is identified as a high-priority threat, initiate a state change in the relevant smart contract to prevent the attack using sessions keys approved by authorized party or send a request for sender approval.<br><br>
 **2.Notification Alert:**
 Send an alert to the relevant stakeholders to inform them of the detected suspicious transaction.<br><br>
-**3Both:**
+**3.Both:**
 Execute both the state change in the smart contract using permission signers(Session Keys) of actual owners and send a notification alert to ensure immediate response to recipients.
 This could be a possible or more robust way to enhance the security of blockchain transactions, providing real-time detection and mitigation of potential attacks.
