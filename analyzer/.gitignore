@@ -1,0 +1,23 @@
+node_modules/
+dist/
+
+.env
+.env.staging
+.env.prod
+.env.local
+.env.test-prod
+
+package-lock.json
+yarn.lock
+
+keys.ts
+
+firebase.json
+credentials.json
+ssl-tls-key.pem
+
+temp/
+
+# lock files
+package-lock.json
+yarn.lock
