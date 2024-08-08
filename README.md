@@ -133,13 +133,13 @@ ALERT_EMAIL_RECIPIENT=
 yarn dev local
 ```
 
-## Proposed Overall Architecture for live detection and metigation of attack using LLM Models 
-![Proposed Overall Architecture Using LLM](/assets/proposed-overall-architecture-using-llm.png)
+## Proposed Overall Architecture for Real-time Detection and Mitigation of Attacks Using ML Models for Anomaly Detection 
+![Proposed Overall Architecture](/assets/proposed-overall-architecture.png)
 Our proposed solution aims to enhance blockchain security by detecting and mitigating attacks in real-time. This approach involves monitoring pending transactions, applying specific filters, and using a trained model to identify suspicious patterns. The system can then take appropriate actions, such as changing the state of a smart contract or sending notifications.
-- **Trained LLM Model:** Trained a LLM Model or develop own model on implementing transformers that has been developed using historical transaction data, including both normal transactions and past attack patterns.
+- **Trained ML Models for Anomaly Transaction Pattern Detection:** Trained a ML Model on implementing transformers that has been developed using historical transaction data, including both normal transactions and past attack patterns.
 - **Collect Pending Transactions from the Mempool:** Continuously monitor and gather pending transactions from the blockchain mempool.
 - **Apply Monitoring Filters:** Implement filters to select transactions that require closer based on montior predefined rules such smart contract address, signature of function specific to contract.**
-- **Analyze Transactions with Trained LLM Model:** Feed the filtered transactions into a trained model.
+- **Analyze Transactions with Trained ML Model:** Feed the filtered transactions into a trained model.
 
 - **Detect Suspicious Patterns:**
 The model analyzes the live transactions in the context of past pending transaction that are recently feeded to detect any suspicious patterns indicative of potential attacks.
