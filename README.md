@@ -134,7 +134,7 @@ yarn dev local
 ```
 
 ## Proposed Overall Architecture for Real-time Detection and Mitigation of Attacks Using ML Models for Anomaly Detection 
-![Proposed Overall Architecture](/assets/proposed-overall-architecture.png)
+![Proposed Overall Architecture](/assets/proposed-overall-architecture-using-ml.png)
 Our proposed solution aims to enhance blockchain security by detecting and mitigating attacks in real-time. This approach involves monitoring pending transactions, applying specific filters, and using a trained model to identify suspicious patterns. The system can then take appropriate actions, such as changing the state of a smart contract or sending notifications.
 - **Trained ML Models for Anomaly Transaction Pattern Detection:** Trained a ML Model on implementing transformers that has been developed using historical transaction data, including both normal transactions and past attack patterns.
 - **Collect Pending Transactions from the Mempool:** Continuously monitor and gather pending transactions from the blockchain mempool.
